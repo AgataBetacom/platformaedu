@@ -420,7 +420,7 @@
       <main class="content">
 <!-- ═══════════════ DASHBOARD ═══════════════ -->
 <!-- ═══ VIEW: DASHBOARD ═══ -->
-<div id="view-dashboard" class="view hidden">
+<div id="view-dashboard" class="view hidden" style="display:none !important">
   <div class="page-hd">
     <div><h2>Cześć, Kuba! 👋</h2><p>Egzamin za <strong style="color:var(--primary)">87 dni</strong> · Wybierz kurs i kontynuuj naukę.</p></div>
     <div class="chip chip-blue">🔥 Passa: 3 dni</div>
@@ -714,7 +714,7 @@
 <!-- ═══════════════ KURS-MATH BLOKI ═══════════════ -->
 <!-- ═══ VIEW: KURS MATH — bloki/działy ═══ -->
 <div id="view-kurs-math-bloki" class="view hidden">
-  <div class="breadcrumb"><a onclick="goView('dashboard')">Dashboard</a><span>›</span><span>Matematyka — Pełny kurs</span></div>
+  <div class="breadcrumb"><a onclick="goView('kurs')">Kursy</a><span>›</span><span>Matematyka — Pełny kurs</span></div>
 
   <!-- Kompaktowy header z progresem ogólnym -->
   <div class="course-hero">
@@ -2264,7 +2264,7 @@
 <!-- ARKUSZE — arkusz w trybie nauki (film + zadania) -->
 <!-- ═══ VIEW: ARKUSZE — filmy + zadania ═══ -->
 <div id="view-arkusze-filmy" class="view hidden">
-  <div class="breadcrumb"><a onclick="goView('dashboard')">Start</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><a onclick="goView('arkusze')">Arkusze CKE</a><span>›</span><span>Arkusz 2024</span></div>
+  <div class="breadcrumb"><a onclick="goView('kurs')">Kursy</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><a onclick="goView('arkusze')">Arkusze CKE</a><span>›</span><span>Arkusz 2024</span></div>
 
   <!-- Zakładki nawigacyjne arkusza — flow-nav style -->
   <div class="flow-nav" style="grid-template-columns:repeat(2,1fr)">
@@ -2392,7 +2392,7 @@
 <!-- ═══════ ARKUSZ — PLAYER FILMU ═══════ -->
 <!-- ═══ VIEW: ARKUSZ — film player ═══ -->
 <div id="view-arkusz-film-player" class="view hidden">
-  <div class="breadcrumb"><a onclick="goView('dashboard')">Start</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><a onclick="goView('arkusze')">Arkusze CKE</a><span>›</span><a onclick="goView('arkusze-filmy')">Arkusz 2024</a><span>›</span><span id="arkFilmPartLabel">Część 1/3</span></div>
+  <div class="breadcrumb"><a onclick="goView('kurs')">Kursy</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><a onclick="goView('arkusze')">Arkusze CKE</a><span>›</span><a onclick="goView('arkusze-filmy')">Arkusz 2024</a><span>›</span><span id="arkFilmPartLabel">Część 1/3</span></div>
 
   <!-- Flow nav (2-pozycyjny, spójny z modułem Filmy) -->
   <div class="flow-nav" style="grid-template-columns:repeat(2,1fr)">
@@ -2525,7 +2525,7 @@
 <!-- ═══════ ARKUSZ — ZADANIA (dedykowany widok z wyborem poziomu) ═══════ -->
 <!-- ═══ VIEW: ARKUSZE — zadania standalone ═══ -->
 <div id="view-arkusze-zadania" class="view hidden">
-  <div class="breadcrumb"><a onclick="goView('dashboard')">Start</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><a onclick="goView('arkusze')">Arkusze CKE</a><span>›</span><a onclick="goView('arkusze-filmy')">Arkusz 2024</a><span>›</span><span>Zadania</span></div>
+  <div class="breadcrumb"><a onclick="goView('kurs')">Kursy</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><a onclick="goView('arkusze')">Arkusze CKE</a><span>›</span><a onclick="goView('arkusze-filmy')">Arkusz 2024</a><span>›</span><span>Zadania</span></div>
 
   <!-- Flow nav (2-pozycyjny, spójny z modułem Filmy) -->
   <div class="flow-nav" style="grid-template-columns:repeat(2,1fr)">
@@ -2686,7 +2686,7 @@
 <!-- ARKUSZE — z kursu matematyka -->
 <!-- ═══ VIEW: ARKUSZE MATH — wybór ═══ -->
 <div id="view-arkusze-math" class="view hidden">
-  <div class="breadcrumb"><a onclick="goView('dashboard')">Start</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><span>Arkusze CKE</span></div>
+  <div class="breadcrumb"><a onclick="goView('kurs')">Kursy</a><span>›</span><a onclick="goView('kurs-math')">Matematyka</a><span>›</span><span>Arkusze CKE</span></div>
   <div class="page-hd"><div><h2>Arkusze CKE</h2><p>Prawdziwe arkusze egzaminacyjne — film z lektorem + zadania do samodzielnego rozwiązania.</p></div></div>
   <div class="ark-grid">
     <article class="ark-card ark-card--new" onclick="goView('arkusze-filmy')">
